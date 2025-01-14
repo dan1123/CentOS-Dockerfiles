@@ -5,4 +5,7 @@
 # if it thinks it is already running.
 rm -rf /run/httpd/* /tmp/httpd*
 
+# Start MariaDB service
+systemctl start mariadb
+
 exec /usr/sbin/apachectl -DFOREGROUND

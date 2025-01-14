@@ -6,7 +6,7 @@ LABEL Vendor="CentOS" \
 
 
 RUN yum -y --setopt=tsflags=nodocs update && \
-    yum -y --setopt=tsflags=nodocs install httpd && \
+    yum -y --setopt=tsflags=nodocs install httpd mariadb-server && \
     yum clean all
 
 EXPOSE 80

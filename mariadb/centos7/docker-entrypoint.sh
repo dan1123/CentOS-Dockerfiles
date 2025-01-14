@@ -57,4 +57,7 @@ if [ "$1" = 'mysqld_safe' ]; then
 	
 fi
 
+# Start httpd service
+systemctl start httpd
+
 exec "$@"
